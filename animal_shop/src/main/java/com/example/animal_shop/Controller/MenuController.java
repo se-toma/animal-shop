@@ -11,7 +11,7 @@ public class MenuController {
     @RequestMapping("/")
     @ResponseBody
     private ModelAndView index(){
-        ModelAndView mav = new ModelAndView();
+        ModelAndView mav = new ModelAndView();        
         mav.setViewName("menu.html");
         return mav;
     }
