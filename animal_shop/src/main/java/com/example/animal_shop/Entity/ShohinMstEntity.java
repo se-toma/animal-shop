@@ -5,11 +5,15 @@ import org.seasar.doma.Entity;
 import org.seasar.doma.GeneratedValue;
 import org.seasar.doma.GenerationType;
 import org.seasar.doma.Id;
+import org.seasar.doma.SequenceGenerator;
+import org.seasar.doma.Table;
  
 @Entity
+@Table(name = "shohin_mst")
 public class ShohinMstEntity {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @SequenceGenerator(sequence = "shohin_id_seq")
     @Column(name = "shohin_id")
     public Integer shohinId;
     

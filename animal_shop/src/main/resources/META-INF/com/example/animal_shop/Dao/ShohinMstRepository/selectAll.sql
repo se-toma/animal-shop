@@ -1,1 +1,1 @@
-select * from shohin_mst
+select * from shohin_mst order by shohin_id
