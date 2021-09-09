@@ -44,9 +44,9 @@
                 <tbody>
                     <th:block th:each="shohinMst,itr : *{shohinMstEntityList}">
                         <tr>
-                            <th class="text-center" th:text="${itr.count}"></th>
-                            <th class="text-center" th:text="${shohinMst.shohinName}"></th>
-                            <th class="text-center" th:text="${shohinMst.shohinPrice}"></th>
+                            <td class="text-center" th:text="${itr.count}"></td>
+                            <td class="text-center" th:text="${shohinMst.shohinName}"></td>
+                            <td class="text-center" th:text="${shohinMst.shohinPrice}"></td>
                         </tr>
                     </th:block>                    
                 </tbody>
